@@ -36,7 +36,7 @@ agent = create_agent(model=llm, tools=tools)
 def main():
     print("Hii from search agent.")
     result = agent.invoke(
-        {"messages": [HumanMessage(content="What is the weather in Tokyo?")]}
+        {"messages": [HumanMessage(content="Searcha any job openings in linkedin for AIML role for freshers and list their details")]}
     )
     print(result["messages"][-1].content)
 
